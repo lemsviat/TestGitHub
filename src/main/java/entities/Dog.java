@@ -2,7 +2,7 @@ package entities;
 
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class Dog {
     private String name = "Каштан";
 
