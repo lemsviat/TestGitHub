@@ -3,6 +3,7 @@ package configs;
 import entities.Cat;
 import entities.Dog;
 import entities.Parrot;
+import entities.TimeMultyplicator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -12,12 +13,19 @@ public class MyConfig {
     public Cat getCat() {
         return new Cat();
     }
-    @Bean ("dog")
+
+    @Bean("dog")
     public Dog getDog() {
         return new Dog();
     }
-    @Bean ("parrot-kesha")
+
+    @Bean("parrot-kesha")
     public Parrot getParrot() {
         return new Parrot();
+    }
+
+    @Bean
+    public TimeMultyplicator getTimeMultyplicator() {
+        return new TimeMultyplicator();
     }
 }
